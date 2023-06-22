@@ -6,7 +6,7 @@
 
     <Grid>
         <imageEditor:SfImageEditor x:Name="imageEditor"
-                                   ImageLoaded="imageEditorImageLoaded"
+                                   ImageLoaded="OnImageLoaded"
                                    Source="imageeditordesktop.png">
         </imageEditor:SfImageEditor>
     </Grid>

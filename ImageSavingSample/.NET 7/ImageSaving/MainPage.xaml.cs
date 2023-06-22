@@ -9,10 +9,9 @@ public partial class MainPage : ContentPage
 		InitializeComponent();
 	}
 
-    private void imageEditorImageSaving(object sender, ImageSavingEventArgs e)
+    private void OnImageSaving(object sender, ImageSavingEventArgs e)
     {
         e.FileName = "Office";
         e.FileType = ImageFileType.Jpeg;
     }
 }
-

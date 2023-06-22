@@ -5,8 +5,7 @@
              x:Class="ImageSaving.MainPage">
 
     <Grid>
-        <imageEditor:SfImageEditor x:Name="imageEditor"
-                                   ImageSaving="imageEditorImageSaving"
+        <imageEditor:SfImageEditor ImageSaving="OnImageSaving"
                                    Source="imageeditordesktop.png">
         </imageEditor:SfImageEditor>
     </Grid>
