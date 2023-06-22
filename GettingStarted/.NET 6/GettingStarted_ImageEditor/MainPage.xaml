@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:imageEditor="clr-namespace:Syncfusion.Maui.ImageEditor;assembly=Syncfusion.Maui.ImageEditor"
+             xmlns:thickness="clr-namespace:Microsoft.Maui;assembly=Microsoft.Maui"
+             x:Class="GettingStarted_ImageEditor.MainPage">
+    <Grid>
+        <Grid.Margin>
+            <OnPlatform x:TypeArguments="thickness:Thickness">
+                <On Platform="MacCatalyst"
+                    Value="-6" />
+                <On Platform="UWP"
+                    Value="-6" />
+            </OnPlatform>
+        </Grid.Margin>
+        <imageEditor:SfImageEditor x:Name="imageEditor"
+                                   SelectionStroke="#AE97FF"
+                                   Source="{OnPlatform Default=imageeditordesktop.png, Android=imageeditormobile.png, iOS=imageeditormobile.png}">
+        </imageEditor:SfImageEditor>
+    </Grid>
+</ContentPage>
