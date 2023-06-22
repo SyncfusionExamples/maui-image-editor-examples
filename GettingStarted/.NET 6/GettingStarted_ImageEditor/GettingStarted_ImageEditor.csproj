@@ -50,7 +50,6 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\imageeditordesktop.png" />
-	  <None Remove="Resources\Images\imageeditormobile.png" />
 	</ItemGroup>
 
 	<ItemGroup>

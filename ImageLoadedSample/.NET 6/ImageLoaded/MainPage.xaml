@@ -2,9 +2,12 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:imageEditor="clr-namespace:Syncfusion.Maui.ImageEditor;assembly=Syncfusion.Maui.ImageEditor"
-             x:Class="GettingStarted_ImageEditor.MainPage">
+             x:Class="ImageLoaded.MainPage">
 
     <Grid>
-        <imageEditor:SfImageEditor Source="imageeditordesktop.png" />
+        <imageEditor:SfImageEditor x:Name="imageEditor"
+                                   ImageLoaded="imageEditorImageLoaded"
+                                   Source="imageeditordesktop.png">
+        </imageEditor:SfImageEditor>
     </Grid>
 </ContentPage>
