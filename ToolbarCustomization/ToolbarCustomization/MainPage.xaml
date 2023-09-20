@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:imageEditor="clr-namespace:Syncfusion.Maui.ImageEditor;assembly=Syncfusion.Maui.ImageEditor"
+             x:Class="ToolbarCustomization.MainPage">
+
+    <Grid>
+        <imageEditor:SfImageEditor x:Name="imageEditor"
+                                   Source="imageeditordesktop.png">
+            <imageEditor:SfImageEditor.ToolbarSettings>
+                <imageEditor:ImageEditorToolbarSettings Background="Pink"
+                                                        IconColor="White"
+                                                        DisabledColor="DarkGray"
+                                                        IconSize="50, 50" />
+            </imageEditor:SfImageEditor.ToolbarSettings>
+        </imageEditor:SfImageEditor>
+    </Grid>
+</ContentPage>
