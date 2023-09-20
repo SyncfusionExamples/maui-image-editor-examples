@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:imageEditor="clr-namespace:Syncfusion.Maui.ImageEditor;assembly=Syncfusion.Maui.ImageEditor"
+             x:Class="ExplicitToolbar.MainPage">
+    
+    <Grid>
+        <imageEditor:SfImageEditor Source="imageeditordesktop.png"
+                                   AutoGenerateToolbarItems="False">
+            <imageEditor:SfImageEditor.Toolbars>
+                <imageEditor:ImageEditorToolbar Orientaion="Vertical"
+                                                Position="End">
+                    <imageEditor:ImageEditorToolbar.ToolbarItems>
+                        <imageEditor:ImageEditorToolbarGroupItem Alignment="Start">
+                            <imageEditor:ImageEditorToolbarGroupItem.Items>
+                                <imageEditor:ImageEditorToolbarItem Name="Browse" />
+                                <imageEditor:ImageEditorToolbarItem Name="Save" />
+                            </imageEditor:ImageEditorToolbarGroupItem.Items>
+                        </imageEditor:ImageEditorToolbarGroupItem>
+                        <imageEditor:ImageEditorToolbarGroupItem Alignment="End">
+                            <imageEditor:ImageEditorToolbarGroupItem.Items>
+                                <imageEditor:ImageEditorToolbarItem Name="Reset" />
+                                <imageEditor:ImageEditorToolbarItem Name="SaveEdit" />
+                            </imageEditor:ImageEditorToolbarGroupItem.Items>
+                        </imageEditor:ImageEditorToolbarGroupItem>
+                    </imageEditor:ImageEditorToolbar.ToolbarItems>
+                </imageEditor:ImageEditorToolbar>
+
+                <imageEditor:ImageEditorToolbar Orientaion="Vertical"
+                                                Position="Start">
+                    <imageEditor:ImageEditorToolbar.ToolbarItems>
+                        <imageEditor:ImageEditorToolbarItem Name="Text"
+                                                            SubToolbarOverlay="False">
+                            <imageEditor:ImageEditorToolbarItem.SubToolbars>
+                                <imageEditor:ImageEditorToolbar>
+                                    <imageEditor:ImageEditorToolbar.ToolbarItems>
+                                        <imageEditor:ImageEditorToolbarItem Name="AddText" />
+                                        <imageEditor:ImageEditorToolbarItem Name="TextColor" />
+                                        <imageEditor:ImageEditorToolbarItem Name="Delete" />
+                                    </imageEditor:ImageEditorToolbar.ToolbarItems>
+                                </imageEditor:ImageEditorToolbar>
+                            </imageEditor:ImageEditorToolbarItem.SubToolbars>
+                        </imageEditor:ImageEditorToolbarItem>
+                        <imageEditor:ImageEditorToolbarItem Name="custom" />
+                        <imageEditor:ImageEditorToolbarItem Name="Pen" />
+                    </imageEditor:ImageEditorToolbar.ToolbarItems>
+                </imageEditor:ImageEditorToolbar>
+            </imageEditor:SfImageEditor.Toolbars>
+        </imageEditor:SfImageEditor>
+    </Grid>
+</ContentPage>
