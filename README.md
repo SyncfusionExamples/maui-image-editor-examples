@@ -1,8 +1,8 @@
-# maui-image-editor
+# .NET MAUI ImageEditor examples
 
 This repository contains the samples that demonstrate the functionalities of .NET MAUI ImageEditor control.
 
-# Syncfusion controls
+## Syncfusion controls
 
 This project used the following Syncfusion control(s):
 * [SfImageEditor](https://www.syncfusion.com/maui-controls/maui-image-editor)
