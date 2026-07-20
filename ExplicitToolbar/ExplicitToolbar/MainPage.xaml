@@ -8,7 +8,7 @@
         <imageEditor:SfImageEditor Source="imageeditordesktop.png"
                                    AutoGenerateToolbarItems="False">
             <imageEditor:SfImageEditor.Toolbars>
-                <imageEditor:ImageEditorToolbar Orientaion="Vertical"
+                <imageEditor:ImageEditorToolbar Orientation="Vertical"
                                                 Position="End">
                     <imageEditor:ImageEditorToolbar.ToolbarItems>
                         <imageEditor:ImageEditorToolbarGroupItem Alignment="Start">
